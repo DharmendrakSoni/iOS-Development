@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uGo-8D-pJ0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QC1-EG-KPu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uGo-8D-pJ0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cQh-Xc-dec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.00071157490370000001" blue="0.1267005977" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tGg-8S-p12" kind="relationship" relationship="rootViewController" id="t6p-JV-30l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5r-fc-o6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2121" y="-25"/>
+        </scene>
+        <!--GestureApp-->
+        <scene sceneID="cYn-qh-tCE">
+            <objects>
+                <viewController storyboardIdentifier="GesturePinchViewController" id="tGg-8S-p12" customClass="GesturePinchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2xA-45-f3C"/>
+                        <viewControllerLayoutGuide type="bottom" id="wmp-qw-IxT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="STL-vk-RXD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kO-Ch-Vpc">
+                                <rect key="frame" x="94" y="167" width="188" height="334"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spa1" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-vD-hBT">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="334"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hNb-vD-hBT" firstAttribute="height" secondItem="8kO-Ch-Vpc" secondAttribute="height" id="Cu9-a1-8I5"/>
+                                    <constraint firstItem="hNb-vD-hBT" firstAttribute="width" secondItem="8kO-Ch-Vpc" secondAttribute="width" id="H0H-Ig-bbB"/>
+                                    <constraint firstItem="hNb-vD-hBT" firstAttribute="centerY" secondItem="8kO-Ch-Vpc" secondAttribute="centerY" id="Tcp-Uh-ceL"/>
+                                    <constraint firstItem="hNb-vD-hBT" firstAttribute="centerX" secondItem="8kO-Ch-Vpc" secondAttribute="centerX" id="b56-m5-YU0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8kO-Ch-Vpc" firstAttribute="centerY" secondItem="STL-vk-RXD" secondAttribute="centerY" id="7Lx-tQ-754"/>
+                            <constraint firstItem="8kO-Ch-Vpc" firstAttribute="width" secondItem="STL-vk-RXD" secondAttribute="width" multiplier="0.5" id="hBs-eN-ysK"/>
+                            <constraint firstItem="8kO-Ch-Vpc" firstAttribute="centerX" secondItem="STL-vk-RXD" secondAttribute="centerX" id="iaZ-bB-1Wu"/>
+                            <constraint firstItem="8kO-Ch-Vpc" firstAttribute="height" secondItem="STL-vk-RXD" secondAttribute="height" multiplier="0.5" id="mpI-Gy-H4w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GestureApp" id="waF-7Y-ybh"/>
+                    <connections>
+                        <outlet property="myView" destination="8kO-Ch-Vpc" id="kAx-AR-VDF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWk-Xq-fVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1460" y="-16"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="spa1" width="572" height="364"/>
+    </resources>
+</document>
