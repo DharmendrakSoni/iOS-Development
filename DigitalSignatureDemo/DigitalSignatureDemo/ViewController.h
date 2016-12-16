@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SignatureViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<SignatureViewControllerDelegate>
 
 
 @end
