@@ -9,7 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    int btnTap;
+}
 @end
 
 @implementation ViewController
@@ -84,20 +86,64 @@
        //imageView.transform = CGAffineTransformMakeRotation(M_PI_2);
     
 }
+//==========this code for anticlock============
+//- (IBAction)btnAntiClockRotate:(id)sender {
+//    UIImage *image = [self rotateUIImage:self.imgView.image clockwise:NO];
+//    
+//    self.imgView.image = image;
+//}
 
-- (IBAction)btnAntiClockRotate:(id)sender {
-    UIImage *image = [self rotateUIImage:self.imgView.image clockwise:NO];
-    
-    self.imgView.image = image;
-}
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    [self.imgView setImage:chosenImage];
+-(UIImage *)makeMirroredImage:(UIImage *)image
+{
+    NSLog(@"image state befor---%d",image.imageOrientation);
+    UIImageOrientation flippedOrientation = UIImageOrientationUpMirrored;
+    UIImage * flippedImage;
+    if(image.imageOrientation==0){
+   flippedImage = [UIImage imageWithCGImage:image.CGImage scale:image.scale orientation:flippedOrientation];
+    }
+    if(image.imageOrientation==4){
+        flippedImage=[UIImage imageWithCGImage:image.CGImage scale:image.scale orientation:UIImageOrientationUp] ;
+    }
+//    switch (image.imageOrientation) {
+//        case UIImageOrientationDown:
+//            flippedOrientation = UIImageOrientationDownMirrored;
+//            break;
+//        case UIImageOrientationLeft:
+//            flippedOrientation = UIImageOrientationLeftMirrored;
+//            break;
+//            // ...
+//    }
+   
+
     
   
+    return flippedImage;
+}
+
+
+- (IBAction)btnMirror:(id)sender {
+    //btnTap=1;
    
+
+     UIImage *image = [self makeMirroredImage:self.imgView.image];
+        self.imgView.image = image;
+ 
     
+
+    
+}
+
+//- (IBAction)btnUnMirror:(id)sender {
+//    
+////    UIImage *chosenImage = [info[UIImagePickerControllerEditedImage];
+////    [self.imgView setImage:chosenImage];
+//
+//}
+
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    [self.imgView setImage:chosenImage];
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
@@ -106,5 +152,6 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
+
 
 @end

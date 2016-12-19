@@ -15,7 +15,8 @@
 - (IBAction)btnOpenImage:(id)sender;
 - (IBAction)btnOpenCamera:(id)sender;
 - (IBAction)btnFlip:(id)sender;
-- (IBAction)btnAntiClockRotate:(id)sender;
+//- (IBAction)btnAntiClockRotate:(id)sender;
+- (IBAction)btnMirror:(id)sender;
 
 @end
 
