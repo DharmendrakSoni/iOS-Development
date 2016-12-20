@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2FE9ACB1E08F90800A9A3E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9ACA1E08F90800A9A3E7 /* main.m */; };
+		E2FE9ACE1E08F90800A9A3E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9ACD1E08F90800A9A3E7 /* AppDelegate.m */; };
+		E2FE9AD41E08F90800A9A3E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FE9AD21E08F90800A9A3E7 /* Main.storyboard */; };
+		E2FE9AD71E08F90800A9A3E7 /* JsonAndXmlParsingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9AD51E08F90800A9A3E7 /* JsonAndXmlParsingApp.xcdatamodeld */; };
+		E2FE9AD91E08F90800A9A3E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FE9AD81E08F90800A9A3E7 /* Assets.xcassets */; };
+		E2FE9ADC1E08F90800A9A3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FE9ADA1E08F90800A9A3E7 /* LaunchScreen.storyboard */; };
+		E2FE9AE71E08F90800A9A3E7 /* JsonAndXmlParsingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9AE61E08F90800A9A3E7 /* JsonAndXmlParsingAppTests.m */; };
+		E2FE9AF21E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9AF11E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests.m */; };
+		E2FE9B011E08FC3500A9A3E7 /* ListOfTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9B001E08FC3500A9A3E7 /* ListOfTopicViewController.m */; };
+		E2FE9B0A1E0904B000A9A3E7 /* JSONParseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9B091E0904B000A9A3E7 /* JSONParseTableViewCell.m */; };
+		E2FE9B0D1E0904CD00A9A3E7 /* JSONParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9B0C1E0904CD00A9A3E7 /* JSONParseViewController.m */; };
+		E2FE9B101E09158F00A9A3E7 /* XMLParseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9B0F1E09158F00A9A3E7 /* XMLParseTableViewController.m */; };
+		E2FE9B551E09666400A9A3E7 /* RawJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9B541E09666400A9A3E7 /* RawJsonViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2FE9AE31E08F90800A9A3E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2FE9ABE1E08F90800A9A3E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2FE9AC51E08F90800A9A3E7;
+			remoteInfo = JsonAndXmlParsingApp;
+		};
+		E2FE9AEE1E08F90800A9A3E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2FE9ABE1E08F90800A9A3E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2FE9AC51E08F90800A9A3E7;
+			remoteInfo = JsonAndXmlParsingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2FE9AC61E08F90800A9A3E7 /* JsonAndXmlParsingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonAndXmlParsingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FE9ACA1E08F90800A9A3E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2FE9ACC1E08F90800A9A3E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2FE9ACD1E08F90800A9A3E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2FE9AD31E08F90800A9A3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2FE9AD61E08F90800A9A3E7 /* JsonAndXmlParsingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JsonAndXmlParsingApp.xcdatamodel; sourceTree = "<group>"; };
+		E2FE9AD81E08F90800A9A3E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2FE9ADB1E08F90800A9A3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2FE9ADD1E08F90800A9A3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FE9AE21E08F90800A9A3E7 /* JsonAndXmlParsingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonAndXmlParsingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FE9AE61E08F90800A9A3E7 /* JsonAndXmlParsingAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonAndXmlParsingAppTests.m; sourceTree = "<group>"; };
+		E2FE9AE81E08F90800A9A3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FE9AED1E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonAndXmlParsingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FE9AF11E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonAndXmlParsingAppUITests.m; sourceTree = "<group>"; };
+		E2FE9AF31E08F90900A9A3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FE9AFF1E08FC3500A9A3E7 /* ListOfTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfTopicViewController.h; sourceTree = "<group>"; };
+		E2FE9B001E08FC3500A9A3E7 /* ListOfTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListOfTopicViewController.m; sourceTree = "<group>"; };
+		E2FE9B081E0904B000A9A3E7 /* JSONParseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParseTableViewCell.h; sourceTree = "<group>"; };
+		E2FE9B091E0904B000A9A3E7 /* JSONParseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParseTableViewCell.m; sourceTree = "<group>"; };
+		E2FE9B0B1E0904CD00A9A3E7 /* JSONParseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParseViewController.h; sourceTree = "<group>"; };
+		E2FE9B0C1E0904CD00A9A3E7 /* JSONParseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParseViewController.m; sourceTree = "<group>"; };
+		E2FE9B0E1E09158F00A9A3E7 /* XMLParseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParseTableViewController.h; sourceTree = "<group>"; };
+		E2FE9B0F1E09158F00A9A3E7 /* XMLParseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParseTableViewController.m; sourceTree = "<group>"; };
+		E2FE9B531E09666300A9A3E7 /* RawJsonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawJsonViewController.h; sourceTree = "<group>"; };
+		E2FE9B541E09666400A9A3E7 /* RawJsonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawJsonViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2FE9AC31E08F90800A9A3E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE9ADF1E08F90800A9A3E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE9AEA1E08F90800A9A3E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2FE9ABD1E08F90800A9A3E7 = {
+			isa = PBXGroup;
+			children = (
+				E2FE9AC81E08F90800A9A3E7 /* JsonAndXmlParsingApp */,
+				E2FE9AE51E08F90800A9A3E7 /* JsonAndXmlParsingAppTests */,
+				E2FE9AF01E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests */,
+				E2FE9AC71E08F90800A9A3E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2FE9AC71E08F90800A9A3E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE9AC61E08F90800A9A3E7 /* JsonAndXmlParsingApp.app */,
+				E2FE9AE21E08F90800A9A3E7 /* JsonAndXmlParsingAppTests.xctest */,
+				E2FE9AED1E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2FE9AC81E08F90800A9A3E7 /* JsonAndXmlParsingApp */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE9ACC1E08F90800A9A3E7 /* AppDelegate.h */,
+				E2FE9ACD1E08F90800A9A3E7 /* AppDelegate.m */,
+				E2FE9AFF1E08FC3500A9A3E7 /* ListOfTopicViewController.h */,
+				E2FE9B001E08FC3500A9A3E7 /* ListOfTopicViewController.m */,
+				E2FE9B0B1E0904CD00A9A3E7 /* JSONParseViewController.h */,
+				E2FE9B0C1E0904CD00A9A3E7 /* JSONParseViewController.m */,
+				E2FE9B081E0904B000A9A3E7 /* JSONParseTableViewCell.h */,
+				E2FE9B091E0904B000A9A3E7 /* JSONParseTableViewCell.m */,
+				E2FE9B0E1E09158F00A9A3E7 /* XMLParseTableViewController.h */,
+				E2FE9B0F1E09158F00A9A3E7 /* XMLParseTableViewController.m */,
+				E2FE9B531E09666300A9A3E7 /* RawJsonViewController.h */,
+				E2FE9B541E09666400A9A3E7 /* RawJsonViewController.m */,
+				E2FE9AD21E08F90800A9A3E7 /* Main.storyboard */,
+				E2FE9AD81E08F90800A9A3E7 /* Assets.xcassets */,
+				E2FE9ADA1E08F90800A9A3E7 /* LaunchScreen.storyboard */,
+				E2FE9ADD1E08F90800A9A3E7 /* Info.plist */,
+				E2FE9AD51E08F90800A9A3E7 /* JsonAndXmlParsingApp.xcdatamodeld */,
+				E2FE9AC91E08F90800A9A3E7 /* Supporting Files */,
+			);
+			path = JsonAndXmlParsingApp;
+			sourceTree = "<group>";
+		};
+		E2FE9AC91E08F90800A9A3E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE9ACA1E08F90800A9A3E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2FE9AE51E08F90800A9A3E7 /* JsonAndXmlParsingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE9AE61E08F90800A9A3E7 /* JsonAndXmlParsingAppTests.m */,
+				E2FE9AE81E08F90800A9A3E7 /* Info.plist */,
+			);
+			path = JsonAndXmlParsingAppTests;
+			sourceTree = "<group>";
+		};
+		E2FE9AF01E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE9AF11E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests.m */,
+				E2FE9AF31E08F90900A9A3E7 /* Info.plist */,
+			);
+			path = JsonAndXmlParsingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2FE9AC51E08F90800A9A3E7 /* JsonAndXmlParsingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FE9AF61E08F90900A9A3E7 /* Build configuration list for PBXNativeTarget "JsonAndXmlParsingApp" */;
+			buildPhases = (
+				E2FE9AC21E08F90800A9A3E7 /* Sources */,
+				E2FE9AC31E08F90800A9A3E7 /* Frameworks */,
+				E2FE9AC41E08F90800A9A3E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JsonAndXmlParsingApp;
+			productName = JsonAndXmlParsingApp;
+			productReference = E2FE9AC61E08F90800A9A3E7 /* JsonAndXmlParsingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2FE9AE11E08F90800A9A3E7 /* JsonAndXmlParsingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FE9AF91E08F90900A9A3E7 /* Build configuration list for PBXNativeTarget "JsonAndXmlParsingAppTests" */;
+			buildPhases = (
+				E2FE9ADE1E08F90800A9A3E7 /* Sources */,
+				E2FE9ADF1E08F90800A9A3E7 /* Frameworks */,
+				E2FE9AE01E08F90800A9A3E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2FE9AE41E08F90800A9A3E7 /* PBXTargetDependency */,
+			);
+			name = JsonAndXmlParsingAppTests;
+			productName = JsonAndXmlParsingAppTests;
+			productReference = E2FE9AE21E08F90800A9A3E7 /* JsonAndXmlParsingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2FE9AEC1E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FE9AFC1E08F90900A9A3E7 /* Build configuration list for PBXNativeTarget "JsonAndXmlParsingAppUITests" */;
+			buildPhases = (
+				E2FE9AE91E08F90800A9A3E7 /* Sources */,
+				E2FE9AEA1E08F90800A9A3E7 /* Frameworks */,
+				E2FE9AEB1E08F90800A9A3E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2FE9AEF1E08F90800A9A3E7 /* PBXTargetDependency */,
+			);
+			name = JsonAndXmlParsingAppUITests;
+			productName = JsonAndXmlParsingAppUITests;
+			productReference = E2FE9AED1E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2FE9ABE1E08F90800A9A3E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "vinod bisht";
+				TargetAttributes = {
+					E2FE9AC51E08F90800A9A3E7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3QUCRBS8A9;
+						ProvisioningStyle = Automatic;
+					};
+					E2FE9AE11E08F90800A9A3E7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3QUCRBS8A9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2FE9AC51E08F90800A9A3E7;
+					};
+					E2FE9AEC1E08F90800A9A3E7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3QUCRBS8A9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2FE9AC51E08F90800A9A3E7;
+					};
+				};
+			};
+			buildConfigurationList = E2FE9AC11E08F90800A9A3E7 /* Build configuration list for PBXProject "JsonAndXmlParsingApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2FE9ABD1E08F90800A9A3E7;
+			productRefGroup = E2FE9AC71E08F90800A9A3E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2FE9AC51E08F90800A9A3E7 /* JsonAndXmlParsingApp */,
+				E2FE9AE11E08F90800A9A3E7 /* JsonAndXmlParsingAppTests */,
+				E2FE9AEC1E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2FE9AC41E08F90800A9A3E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE9ADC1E08F90800A9A3E7 /* LaunchScreen.storyboard in Resources */,
+				E2FE9AD91E08F90800A9A3E7 /* Assets.xcassets in Resources */,
+				E2FE9AD41E08F90800A9A3E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE9AE01E08F90800A9A3E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE9AEB1E08F90800A9A3E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2FE9AC21E08F90800A9A3E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE9B0D1E0904CD00A9A3E7 /* JSONParseViewController.m in Sources */,
+				E2FE9B011E08FC3500A9A3E7 /* ListOfTopicViewController.m in Sources */,
+				E2FE9AD71E08F90800A9A3E7 /* JsonAndXmlParsingApp.xcdatamodeld in Sources */,
+				E2FE9B101E09158F00A9A3E7 /* XMLParseTableViewController.m in Sources */,
+				E2FE9ACE1E08F90800A9A3E7 /* AppDelegate.m in Sources */,
+				E2FE9B551E09666400A9A3E7 /* RawJsonViewController.m in Sources */,
+				E2FE9ACB1E08F90800A9A3E7 /* main.m in Sources */,
+				E2FE9B0A1E0904B000A9A3E7 /* JSONParseTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE9ADE1E08F90800A9A3E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE9AE71E08F90800A9A3E7 /* JsonAndXmlParsingAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE9AE91E08F90800A9A3E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE9AF21E08F90800A9A3E7 /* JsonAndXmlParsingAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2FE9AE41E08F90800A9A3E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2FE9AC51E08F90800A9A3E7 /* JsonAndXmlParsingApp */;
+			targetProxy = E2FE9AE31E08F90800A9A3E7 /* PBXContainerItemProxy */;
+		};
+		E2FE9AEF1E08F90800A9A3E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2FE9AC51E08F90800A9A3E7 /* JsonAndXmlParsingApp */;
+			targetProxy = E2FE9AEE1E08F90800A9A3E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2FE9AD21E08F90800A9A3E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2FE9AD31E08F90800A9A3E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2FE9ADA1E08F90800A9A3E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2FE9ADB1E08F90800A9A3E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2FE9AF41E08F90900A9A3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2FE9AF51E08F90900A9A3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2FE9AF71E08F90900A9A3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3QUCRBS8A9;
+				INFOPLIST_FILE = JsonAndXmlParsingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = loginworks.com.JsonAndXmlParsingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2FE9AF81E08F90900A9A3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3QUCRBS8A9;
+				INFOPLIST_FILE = JsonAndXmlParsingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = loginworks.com.JsonAndXmlParsingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E2FE9AFA1E08F90900A9A3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3QUCRBS8A9;
+				INFOPLIST_FILE = JsonAndXmlParsingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = loginworks.com.JsonAndXmlParsingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JsonAndXmlParsingApp.app/JsonAndXmlParsingApp";
+			};
+			name = Debug;
+		};
+		E2FE9AFB1E08F90900A9A3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3QUCRBS8A9;
+				INFOPLIST_FILE = JsonAndXmlParsingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = loginworks.com.JsonAndXmlParsingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JsonAndXmlParsingApp.app/JsonAndXmlParsingApp";
+			};
+			name = Release;
+		};
+		E2FE9AFD1E08F90900A9A3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3QUCRBS8A9;
+				INFOPLIST_FILE = JsonAndXmlParsingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = loginworks.com.JsonAndXmlParsingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JsonAndXmlParsingApp;
+			};
+			name = Debug;
+		};
+		E2FE9AFE1E08F90900A9A3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3QUCRBS8A9;
+				INFOPLIST_FILE = JsonAndXmlParsingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = loginworks.com.JsonAndXmlParsingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JsonAndXmlParsingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2FE9AC11E08F90800A9A3E7 /* Build configuration list for PBXProject "JsonAndXmlParsingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FE9AF41E08F90900A9A3E7 /* Debug */,
+				E2FE9AF51E08F90900A9A3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2FE9AF61E08F90900A9A3E7 /* Build configuration list for PBXNativeTarget "JsonAndXmlParsingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FE9AF71E08F90900A9A3E7 /* Debug */,
+				E2FE9AF81E08F90900A9A3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2FE9AF91E08F90900A9A3E7 /* Build configuration list for PBXNativeTarget "JsonAndXmlParsingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FE9AFA1E08F90900A9A3E7 /* Debug */,
+				E2FE9AFB1E08F90900A9A3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2FE9AFC1E08F90900A9A3E7 /* Build configuration list for PBXNativeTarget "JsonAndXmlParsingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FE9AFD1E08F90900A9A3E7 /* Debug */,
+				E2FE9AFE1E08F90900A9A3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2FE9AD51E08F90800A9A3E7 /* JsonAndXmlParsingApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2FE9AD61E08F90800A9A3E7 /* JsonAndXmlParsingApp.xcdatamodel */,
+			);
+			currentVersion = E2FE9AD61E08F90800A9A3E7 /* JsonAndXmlParsingApp.xcdatamodel */;
+			path = JsonAndXmlParsingApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E2FE9ABE1E08F90800A9A3E7 /* Project object */;
+}

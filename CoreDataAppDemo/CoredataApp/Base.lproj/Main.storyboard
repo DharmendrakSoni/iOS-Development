@@ -53,7 +53,7 @@
                             <outlet property="delegate" destination="uoz-Em-QWr" id="zAL-i4-Tlt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Devices" id="J8G-R2-Up8">
+                    <navigationItem key="navigationItem" title="Car Details" id="J8G-R2-Up8">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="YKB-Na-eKU">
                             <connections>
                                 <segue destination="geT-sk-4oR" kind="presentation" id="OC4-ZT-DMR"/>
@@ -80,19 +80,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDb-tf-ald">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Car Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDb-tf-ald">
                                 <rect key="frame" x="16" y="80" width="337.5" height="46.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Version" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mrk-AJ-SrV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Car Model" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mrk-AJ-SrV">
                                 <rect key="frame" x="16" y="134.5" width="337.5" height="53.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Company Nmae" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOb-bF-yEI">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Car Company Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOb-bF-yEI">
                                 <rect key="frame" x="16" y="196" width="337.5" height="53.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -103,7 +103,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.24803278240000001" blue="0.20352582550000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Detail" id="MDV-XR-rTI">
+                                    <navigationItem title="Add Car Details" id="MDV-XR-rTI">
                                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="GX8-oX-zE5">
                                             <connections>
                                                 <action selector="Cancel:" destination="geT-sk-4oR" id="vjw-Bk-iWB"/>

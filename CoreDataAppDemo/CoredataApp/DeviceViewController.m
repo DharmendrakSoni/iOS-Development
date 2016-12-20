@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]] ;
-    [self.navigationItem setTitle:@"CoreData"];
+    //[self.navigationItem setTitle:@"CoreData"];
     [self.navigationItem setLeftBarButtonItem:self.editButtonItem];
    
     
