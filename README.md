@@ -20,3 +20,7 @@ In this app i have implemented the functionality of Gesture properties such as(Z
 3:-ImageFunctionApp:-
 
 In this app i have show how to open device camera and gallary and on selecting image i have told how to rotate image and set to mirror effect on that image. 
+
+![alt tag](https://github.com/DharmendrakSoni/iOS-Development/IMG_0186.PNG)
+
+![alt tag](https://github.com/DharmendrakSoni/iOS-Development/IMG_0186.PNG)
