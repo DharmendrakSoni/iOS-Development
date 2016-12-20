@@ -5,38 +5,27 @@ I've created Demo app on the following below topic in iOS(Objective c):-
 
 1:- CoredataDemoApp (Database Integrated dummy App With Crud Operations)
 
-##Screenshot1
+![imageedit_29_4014325581](https://cloud.githubusercontent.com/assets/24600522/21350842/ace5f020-c6df-11e6-80eb-119731dca3a1.png)
 
-![imageedit_15_8273507855](https://cloud.githubusercontent.com/assets/24600522/21348412/1f8c8830-c6d3-11e6-8673-91c8636fcc88.png)
+![imageedit_33_7941444132](https://cloud.githubusercontent.com/assets/24600522/21350852/b7fb2cdc-c6df-11e6-8caa-9971ce72df01.png)
 
-##screenshot2
-
-![imageedit_17_3359202541](https://cloud.githubusercontent.com/assets/24600522/21348441/37462e9a-c6d3-11e6-8281-1fa395237dd9.png)
-
-##screenshot3
-
-![imageedit_19_8540733855](https://cloud.githubusercontent.com/assets/24600522/21348456/43ffa814-c6d3-11e6-81af-6710407f07ab.png)
-
+![imageedit_35_5483248893](https://cloud.githubusercontent.com/assets/24600522/21350861/c24f6c84-c6df-11e6-97dd-ed600987804b.png)
 
 2:- GestureDemoApp (Image view with all possible functionalities-rotaion,zoom in,zoom out(pinch zoom)etc)
 
 3:- ImageFunctionApp(Open device camera and gallary, performed rotation and mirror effect on selected image)
 
-##screenshot1
+![imageedit_22_5315100245](https://cloud.githubusercontent.com/assets/24600522/21350759/1d60dbb8-c6df-11e6-9c5d-06dba095cacf.png)
 
-![imageedit_1_5640759259](https://cloud.githubusercontent.com/assets/24600522/21347563/2cbbadbe-c6cf-11e6-9eae-9a790a5bc9a7.png)
+![imageedit_25_6378952935](https://cloud.githubusercontent.com/assets/24600522/21350771/32ac73f6-c6df-11e6-84ae-3e2402b1fb87.png)
 
-##screenshot2
-
-![imageedit_3_4445695802](https://cloud.githubusercontent.com/assets/24600522/21347574/3eaeed06-c6cf-11e6-9867-91d1f7747536.png)
-
-##screenshot3
-
-![imageedit_7_3676245678](https://cloud.githubusercontent.com/assets/24600522/21347591/50b7dba2-c6cf-11e6-8715-2cd9e5d726aa.png)
+![imageedit_27_7121041692](https://cloud.githubusercontent.com/assets/24600522/21350784/425669f6-c6df-11e6-980a-05e65f5ddf60.png)
 
 1:CoredataDemoApp:-
 
 In this app i have implemented the functionality of  Insert,Update,Delete and Showing the data with the haelp of the coredata.  coredata:When we talk about persistent data, people probably think of database. If you are familiar with Oracle or MySQL, you know that relational database stores data in the form of table, row and column, and it usually facilitates access through what-so-called SQL query. However, don’t mix up Core Data with database. Though SQLite database is the default persistent store for Core Data on iPhone, Core Data is not a relational database. It is actually a framework that lets developers store (or retrieve) data in database in an object-oriented way. With Core Data, you can easily map the objects in your apps to the table records in the database without even knowing any SQL.
+
+![imageedit_33_7941444132](https://cloud.githubusercontent.com/assets/24600522/21350852/b7fb2cdc-c6df-11e6-8caa-9971ce72df01.png)
 
 2:-GestureDemoApp:-
 
@@ -45,5 +34,7 @@ In this app i have implemented the functionality of Gesture properties such as(Z
 3:-ImageFunctionApp:-
 
 In this app i have show how to open device camera and gallary and on selecting image i have told how to rotate image and set to mirror effect on that image. 
+
+![imageedit_22_5315100245](https://cloud.githubusercontent.com/assets/24600522/21350759/1d60dbb8-c6df-11e6-9c5d-06dba095cacf.png)
 
 
