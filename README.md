@@ -5,9 +5,29 @@ I've created Demo app on the following below topic in iOS(Objective c):-
 
 1:- CoredataDemoApp (Database Integrated dummy App With Crud Operations)
 
+##Screenshot
+
+
+
+
+##screenshot
+
+
 2:- GestureDemoApp (Image view with all possible functionalities-rotaion,zoom in,zoom out(pinch zoom)etc)
 
 3:- ImageFunctionApp(Open device camera and gallary, performed rotation and mirror effect on selected image)
+
+##screenshot
+
+![imageedit_1_5640759259](https://cloud.githubusercontent.com/assets/24600522/21347563/2cbbadbe-c6cf-11e6-9eae-9a790a5bc9a7.png)
+
+##screenshot
+
+![imageedit_3_4445695802](https://cloud.githubusercontent.com/assets/24600522/21347574/3eaeed06-c6cf-11e6-9867-91d1f7747536.png)
+
+##screenshot
+
+![imageedit_7_3676245678](https://cloud.githubusercontent.com/assets/24600522/21347591/50b7dba2-c6cf-11e6-8715-2cd9e5d726aa.png)
 
 1:CoredataDemoApp:-
 
@@ -21,6 +41,4 @@ In this app i have implemented the functionality of Gesture properties such as(Z
 
 In this app i have show how to open device camera and gallary and on selecting image i have told how to rotate image and set to mirror effect on that image. 
 
-![alt tag](https://github.com/DharmendrakSoni/iOS-Development/IMG_0186.PNG)
 
-![alt tag](https://github.com/DharmendrakSoni/iOS-Development/IMG_0186.PNG)
