@@ -22,15 +22,15 @@ I've created Demo app on the following below topic in iOS(Objective c):-
 
 3:- ImageFunctionApp(Open device camera and gallary, performed rotation and mirror effect on selected image)
 
-##screenshot
+##screenshot1
 
 ![imageedit_1_5640759259](https://cloud.githubusercontent.com/assets/24600522/21347563/2cbbadbe-c6cf-11e6-9eae-9a790a5bc9a7.png)
 
-##screenshot
+##screenshot2
 
 ![imageedit_3_4445695802](https://cloud.githubusercontent.com/assets/24600522/21347574/3eaeed06-c6cf-11e6-9867-91d1f7747536.png)
 
-##screenshot
+##screenshot3
 
 ![imageedit_7_3676245678](https://cloud.githubusercontent.com/assets/24600522/21347591/50b7dba2-c6cf-11e6-8715-2cd9e5d726aa.png)
 
