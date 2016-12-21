@@ -1,6 +1,6 @@
 # iOS-Development
 iOS Demo Applications
-<<<<<<< HEAD
+
 
 #Introduction
 I've created Demo app on the following below topic in iOS(Objective c):-
@@ -14,7 +14,7 @@ I've created Demo app on the following below topic in iOS(Objective c):-
 2:-GestureDemoApp:-In this app i have implemented the functionality of Gesture properties such as(Zoom in,Zoom out, pinch ,pan) on a image.
 
 3:-ImageFunctionApp:-In this app i have show how to open device camera and gallary and on selecting image i have told how to rotate image and set to mirror effect on that image. 
-=======
+
 #Introduction
 I've created Demo app on the following below topic in iOS(Objective c):-
 
@@ -53,4 +53,3 @@ In this app i have show how to open device camera and gallary and on selecting i
 ![imageedit_22_5315100245](https://cloud.githubusercontent.com/assets/24600522/21350759/1d60dbb8-c6df-11e6-9c5d-06dba095cacf.png)
 
 
->>>>>>> origin/master
