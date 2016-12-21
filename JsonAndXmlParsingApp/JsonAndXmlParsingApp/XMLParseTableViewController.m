@@ -9,7 +9,9 @@
 #import "XMLParseTableViewController.h"
 
 @interface XMLParseTableViewController ()
-
+{
+    UIActivityIndicatorView *activityView ;
+}
 @end
 
 @implementation XMLParseTableViewController
@@ -19,9 +21,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self startParsing];
-}
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]
+                                             initWithTitle:@"Notes" style:UIBarButtonItemStylePlain
+                                             target:nil action:nil];
+    activityView = [[UIActivityIndicatorView alloc]                                         initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+//[self.navigationItem.backBarButtonItem setTitle:@""];
+    activityView.center=self.view.center;
+    [activityView startAnimating];
+    [self.view addSubview:activityView];
 
+    
+    //[self startParsing];
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+  [self startParsing];
+}
 - (void)startParsing
 {
     NSXMLParser *xmlparser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://images.apple.com/main/rss/hotnews/hotnews.rss#sthash.TyhRD7Zy.dpuf"]];
@@ -75,7 +92,8 @@
     
     cell.textLabel.text = [[[marrXMLData objectAtIndex:indexPath.row] valueForKey:@"title"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     cell.detailTextLabel.text = [[[marrXMLData objectAtIndex:indexPath.row] valueForKey:@"pubDate"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    
+    [activityView stopAnimating];
+
     return cell;
 }
 

@@ -9,16 +9,39 @@
 #import "RawJsonViewController.h"
 
 @interface RawJsonViewController ()
-
+{
+UIActivityIndicatorView *activityView ;
+}
 @end
 
 @implementation RawJsonViewController
-
+@synthesize myWebView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
+    activityView = [[UIActivityIndicatorView alloc]                                         initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    myWebView.delegate=self;
+    activityView.center=self.view.center;    
+    [self.view addSubview:activityView];
 
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSString *urlString = @"Your URL";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [myWebView loadRequest:urlRequest];
+
+}
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    [activityView startAnimating];
+    
+}
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [activityView stopAnimating];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

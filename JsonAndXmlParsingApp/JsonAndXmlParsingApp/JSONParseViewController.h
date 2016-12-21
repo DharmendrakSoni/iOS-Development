@@ -11,4 +11,6 @@
 @interface JSONParseViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *categoryTableView;
 @property(nonatomic,strong)NSMutableArray *categoryData;
+@property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
+
 @end

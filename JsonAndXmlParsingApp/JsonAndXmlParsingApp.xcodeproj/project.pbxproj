@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E28746511E0A43E0004A6CA2 /* RawXMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28746501E0A43E0004A6CA2 /* RawXMLViewController.m */; };
 		E2FE9ACB1E08F90800A9A3E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9ACA1E08F90800A9A3E7 /* main.m */; };
 		E2FE9ACE1E08F90800A9A3E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FE9ACD1E08F90800A9A3E7 /* AppDelegate.m */; };
 		E2FE9AD41E08F90800A9A3E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FE9AD21E08F90800A9A3E7 /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E287464F1E0A43E0004A6CA2 /* RawXMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawXMLViewController.h; sourceTree = "<group>"; };
+		E28746501E0A43E0004A6CA2 /* RawXMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawXMLViewController.m; sourceTree = "<group>"; };
 		E2FE9AC61E08F90800A9A3E7 /* JsonAndXmlParsingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonAndXmlParsingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FE9ACA1E08F90800A9A3E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2FE9ACC1E08F90800A9A3E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				E2FE9B0F1E09158F00A9A3E7 /* XMLParseTableViewController.m */,
 				E2FE9B531E09666300A9A3E7 /* RawJsonViewController.h */,
 				E2FE9B541E09666400A9A3E7 /* RawJsonViewController.m */,
+				E287464F1E0A43E0004A6CA2 /* RawXMLViewController.h */,
+				E28746501E0A43E0004A6CA2 /* RawXMLViewController.m */,
 				E2FE9AD21E08F90800A9A3E7 /* Main.storyboard */,
 				E2FE9AD81E08F90800A9A3E7 /* Assets.xcassets */,
 				E2FE9ADA1E08F90800A9A3E7 /* LaunchScreen.storyboard */,
@@ -307,6 +312,7 @@
 				E2FE9B551E09666400A9A3E7 /* RawJsonViewController.m in Sources */,
 				E2FE9ACB1E08F90800A9A3E7 /* main.m in Sources */,
 				E2FE9B0A1E0904B000A9A3E7 /* JSONParseTableViewCell.m in Sources */,
+				E28746511E0A43E0004A6CA2 /* RawXMLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +550,7 @@
 				E2FE9AF81E08F90900A9A3E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2FE9AF91E08F90900A9A3E7 /* Build configuration list for PBXNativeTarget "JsonAndXmlParsingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +559,7 @@
 				E2FE9AFB1E08F90900A9A3E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2FE9AFC1E08F90900A9A3E7 /* Build configuration list for PBXNativeTarget "JsonAndXmlParsingAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +568,7 @@
 				E2FE9AFE1E08F90900A9A3E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

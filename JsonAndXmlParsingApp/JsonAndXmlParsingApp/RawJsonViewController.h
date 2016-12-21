@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RawJsonViewController : UIViewController
+@interface RawJsonViewController : UIViewController<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *myWebView;
 
 @end

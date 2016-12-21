@@ -8,9 +8,12 @@
 
 #import "JSONParseViewController.h"
 #import "JSONParseTableViewCell.h"
+#import "RawJsonViewController.h"
 
 @interface JSONParseViewController ()
-
+{
+    UIActivityIndicatorView *activityView ;
+}
 @end
 
 @implementation JSONParseViewController
@@ -19,7 +22,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self callApiWithUrl:@"http://aoldev.apponlease.com/api/1b/catsubcat_api.php?app_id=2" ];
+    activityView = [[UIActivityIndicatorView alloc]                                         initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+   [self.navigationItem.backBarButtonItem setTitle:@""];
+    activityView.center=self.view.center;
+    [activityView startAnimating];
+    [self.view addSubview:activityView];
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"ShowRawData" style:UIBarButtonItemStylePlain target:self action:@selector(refreshPropertyList)];
+    self.navigationItem.rightBarButtonItem = anotherButton;
+   
+    
+    // Do any additional setup after loading the view, typically     
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+     [self callApiWithUrl:@"Your URL" ];
 }
 -(void)callApiWithUrl:(NSString*)urlString
 {
@@ -45,6 +63,17 @@
     [dataTask resume];
     
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+}
+-(void)refreshPropertyList
+{
+   
+    [self.activityIndicatorView startAnimating];
+    RawJsonViewController *viewXml=[[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"RawJsonViewController"];
+    [self.navigationController pushViewController:viewXml animated:YES];
+    
+}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -62,7 +91,7 @@
     NSString *catName=[[categoryData objectAtIndex:indexPath.row]valueForKey:@"name"];
     cell.lblId.text=[[categoryData objectAtIndex:indexPath.row]valueForKey:@"id"];
     cell.lblParentId.text=[[categoryData objectAtIndex:indexPath.row]valueForKey:@"description"];
-        
+         [activityView stopAnimating];
     return cell;
 }
 

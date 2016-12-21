@@ -9,6 +9,9 @@
 #import "ListOfTopicViewController.h"
 #import "JSONParseViewController.h"
 #import "XMLParseTableViewController.h"
+#import "RawJsonViewController.h"
+#import "RawXMLViewController.h"
+
 
 @interface ListOfTopicViewController ()
 
@@ -58,7 +61,23 @@
             XMLParseTableViewController *viewXml=[[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"XMLParseTableViewController"];
             [self.navigationController pushViewController:viewXml animated:YES];
             
+            
         }
+            break;
+//        case 2:{
+//            
+//            RawJsonViewController *viewXml=[[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"RawJsonViewController"];
+//            [self.navigationController pushViewController:viewXml animated:YES];
+//            
+//        }
+//            break;
+//        case 3:{
+//            
+//            RawXMLViewController *viewXml=[[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"RawXMLViewController"];
+//            [self.navigationController pushViewController:viewXml animated:YES];
+//            
+//        }
+            
             break;
         default:
             break;
