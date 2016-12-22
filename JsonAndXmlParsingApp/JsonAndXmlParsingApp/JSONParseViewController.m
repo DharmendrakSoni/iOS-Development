@@ -37,7 +37,7 @@
 {
     [super viewDidAppear:animated];
     
-     [self callApiWithUrl:@"Your URL" ];
+     [self callApiWithUrl:@"http://aoldev.apponlease.com/api/1b/catsubcat_api.php?app_id=2" ];
 }
 -(void)callApiWithUrl:(NSString*)urlString
 {

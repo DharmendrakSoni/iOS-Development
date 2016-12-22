@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZOl-HK-jXS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Map-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-Or-c4T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1S-gT-enW">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="601"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="a73-bF-bz9"/>
+                                        </connections>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="u1S-gT-enW" firstAttribute="top" secondItem="Ae1-Or-c4T" secondAttribute="top" constant="60" id="9qQ-NM-BZB"/>
+                                    <constraint firstItem="u1S-gT-enW" firstAttribute="height" secondItem="Ae1-Or-c4T" secondAttribute="height" multiplier="0.9" id="Gsb-oH-sFY"/>
+                                    <constraint firstItem="u1S-gT-enW" firstAttribute="leading" secondItem="Ae1-Or-c4T" secondAttribute="leading" id="dhI-LR-SKC"/>
+                                    <constraint firstItem="u1S-gT-enW" firstAttribute="width" secondItem="Ae1-Or-c4T" secondAttribute="width" id="vMw-jg-PMk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ae1-Or-c4T" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="3l3-y7-zei"/>
+                            <constraint firstItem="Ae1-Or-c4T" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ZUu-Fs-VDj"/>
+                            <constraint firstItem="Ae1-Or-c4T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dpP-oC-ZHH"/>
+                            <constraint firstItem="Ae1-Or-c4T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ukd-91-7PW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Map" id="ohI-e3-dSs"/>
+                    <connections>
+                        <outlet property="mapView" destination="u1S-gT-enW" id="Kq1-7a-Bmg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-468"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vbl-DI-H0P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZOl-HK-jXS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DC5-tv-Oy8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="m4n-c3-xJY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsy-8K-au6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="171.36431784107947"/>
+        </scene>
+    </scenes>
+</document>

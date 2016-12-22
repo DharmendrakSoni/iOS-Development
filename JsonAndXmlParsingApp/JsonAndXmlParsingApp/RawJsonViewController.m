@@ -19,6 +19,7 @@ UIActivityIndicatorView *activityView ;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.navigationItem setTitle:@"Raw Json Data"];
     activityView = [[UIActivityIndicatorView alloc]                                         initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     myWebView.delegate=self;
     activityView.center=self.view.center;    
@@ -29,7 +30,7 @@ UIActivityIndicatorView *activityView ;
 {
     [super viewDidAppear:animated];
     
-    NSString *urlString = @"Your URL";
+    NSString *urlString = @"http://aoldev.apponlease.com/api/1b/catsubcat_api.php?app_id=2";
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [myWebView loadRequest:urlRequest];
