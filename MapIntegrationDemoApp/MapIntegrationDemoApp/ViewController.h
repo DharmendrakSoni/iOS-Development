@@ -15,6 +15,8 @@
     CLLocationManager *objLocationManager;
     double latitude_UserLocation, longitude_UserLocation;
 }
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segControlForColor;
+- (IBAction)segBtnTap:(id)sender;
 @property(nonatomic,strong)NSMutableArray *categoryData;
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 - (IBAction)btnStandards:(id)sender;

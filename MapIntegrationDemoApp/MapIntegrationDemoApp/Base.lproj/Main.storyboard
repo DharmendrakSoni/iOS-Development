@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Map-->
+        <!--ATM Near By-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -24,18 +24,44 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-Or-c4T">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1S-gT-enW">
-                                        <rect key="frame" x="0.0" y="60" width="375" height="601"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" showsUserLocation="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1S-gT-enW">
+                                        <rect key="frame" x="0.0" y="118.5" width="375" height="547"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="a73-bF-bz9"/>
                                         </connections>
                                     </mapView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-eW-lQg">
+                                        <rect key="frame" x="0.0" y="65" width="375" height="53.5"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PDg-xb-Dpk">
+                                                <rect key="frame" x="19" y="11" width="337.5" height="33"/>
+                                                <segments>
+                                                    <segment title="StandardMap"/>
+                                                    <segment title="SatelitMap"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="segBtnTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="uOb-eS-gIK"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="PDg-xb-Dpk" firstAttribute="centerY" secondItem="h6Z-eW-lQg" secondAttribute="centerY" id="1Pe-kT-bhs"/>
+                                            <constraint firstItem="PDg-xb-Dpk" firstAttribute="width" secondItem="h6Z-eW-lQg" secondAttribute="width" multiplier="0.9" id="a82-h0-s31"/>
+                                            <constraint firstItem="PDg-xb-Dpk" firstAttribute="height" secondItem="h6Z-eW-lQg" secondAttribute="height" multiplier="0.6" id="d9X-Fj-CIv"/>
+                                            <constraint firstItem="PDg-xb-Dpk" firstAttribute="centerX" secondItem="h6Z-eW-lQg" secondAttribute="centerX" id="juT-oK-1Hw"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="u1S-gT-enW" firstAttribute="top" secondItem="Ae1-Or-c4T" secondAttribute="top" constant="60" id="9qQ-NM-BZB"/>
-                                    <constraint firstItem="u1S-gT-enW" firstAttribute="height" secondItem="Ae1-Or-c4T" secondAttribute="height" multiplier="0.9" id="Gsb-oH-sFY"/>
+                                    <constraint firstItem="h6Z-eW-lQg" firstAttribute="top" secondItem="Ae1-Or-c4T" secondAttribute="top" constant="65" id="079-Z3-t1M"/>
+                                    <constraint firstItem="h6Z-eW-lQg" firstAttribute="height" secondItem="Ae1-Or-c4T" secondAttribute="height" multiplier="0.08" id="AO2-Jo-mQb"/>
+                                    <constraint firstItem="u1S-gT-enW" firstAttribute="height" secondItem="Ae1-Or-c4T" secondAttribute="height" multiplier="0.82" id="Gsb-oH-sFY"/>
                                     <constraint firstItem="u1S-gT-enW" firstAttribute="leading" secondItem="Ae1-Or-c4T" secondAttribute="leading" id="dhI-LR-SKC"/>
+                                    <constraint firstItem="h6Z-eW-lQg" firstAttribute="leading" secondItem="Ae1-Or-c4T" secondAttribute="leading" id="hR1-KZ-yoj"/>
+                                    <constraint firstItem="h6Z-eW-lQg" firstAttribute="width" secondItem="Ae1-Or-c4T" secondAttribute="width" id="jmw-0G-QmV"/>
+                                    <constraint firstItem="u1S-gT-enW" firstAttribute="top" secondItem="h6Z-eW-lQg" secondAttribute="bottom" id="t4p-yl-t1f"/>
                                     <constraint firstItem="u1S-gT-enW" firstAttribute="width" secondItem="Ae1-Or-c4T" secondAttribute="width" id="vMw-jg-PMk"/>
                                 </constraints>
                             </view>
@@ -48,14 +74,15 @@
                             <constraint firstItem="Ae1-Or-c4T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ukd-91-7PW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Map" id="ohI-e3-dSs"/>
+                    <navigationItem key="navigationItem" title="ATM Near By" id="ohI-e3-dSs"/>
                     <connections>
-                        <outlet property="mapView" destination="u1S-gT-enW" id="Kq1-7a-Bmg"/>
+                        <outlet property="mapView" destination="u1S-gT-enW" id="LpQ-M0-sRv"/>
+                        <outlet property="segControlForColor" destination="PDg-xb-Dpk" id="CBx-zZ-Mee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="-468"/>
+            <point key="canvasLocation" x="-252" y="-475"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vbl-DI-H0P">
@@ -73,7 +100,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsy-8K-au6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80.799999999999997" y="171.36431784107947"/>
+            <point key="canvasLocation" x="-647" y="-161"/>
         </scene>
     </scenes>
 </document>

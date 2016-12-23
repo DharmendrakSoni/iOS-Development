@@ -16,7 +16,7 @@
 @end
 
 @implementation ViewController
-@synthesize mapView,categoryData;
+@synthesize mapView,categoryData,segControlForColor;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -37,6 +37,8 @@
     tapRecognizer.numberOfTouchesRequired = 1;
     
     [self.mapView addGestureRecognizer:tapRecognizer];
+    
+    //[segControlForColor. objectAtIndex:0]
     
     [self loadUserLocation];
 }
@@ -98,7 +100,7 @@
 //    point1.title = @"Delhi";
 //    point1.subtitle = @"Indira Gandhi International Airport";
 //    [mapView addAnnotation:point1];
-     [self callApiWithUrl:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=28.616180,77.355038&radius=500&type=atm&key=AIzaSyCayfvQ3PAOSKa3oQIit5PsNPxNdHBs39I" ];
+     [self callApiWithUrl:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=28.616180,77.355038&radius=500&type=atm&key=AIzaSyCayfvQ3PAOSKa3oQIit5PsNPxNdHBs39I"];
     
 }
 -(void)callApiWithUrl:(NSString*)urlString
@@ -162,5 +164,26 @@
     //[mapView setMapType:MKMapTypeHybrid];
     //[self loadUserLocation];
     
+}
+- (IBAction)segBtnTap:(id)sender {
+    if(segControlForColor.selectedSegmentIndex==0){
+        //self.mapView.delegate = self;
+        //for Type show standard mapview
+        [mapView setMapType:MKMapTypeStandard];
+       // [self loadUserLocation];
+        
+           }
+//    else if(segControlForColor.selectedSegmentIndex==1){
+//        //for Type show sateliteView
+//        [mapView setMapType:MKMapTypeSatellite];
+//        //[self loadUserLocation];
+//    }
+    else{
+       //for Type show HybridView
+    [mapView setMapType:MKMapTypeHybrid];
+        //[self loadUserLocation];
+
+    }
+   
 }
 @end
