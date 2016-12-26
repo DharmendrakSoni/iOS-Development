@@ -11,6 +11,7 @@
 
 @interface ViewController (){
     NSInteger lapIndex;
+    LapListTableViewCell *cell;
 }
 @property (retain,nonatomic)NSMutableArray *mutArrData;
 
@@ -33,15 +34,11 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     myTableView.dataSource=self;
     myTableView.delegate=self;
+   // mutArrData=[[NSMutableArray alloc]init];
+
+   // [resetBtn setEnabled:NO];
+
     mutArrData=[[NSMutableArray alloc]init];
-   
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.myTableView reloadData];
-    });
-
-    [resetBtn setEnabled:NO];
-
-    
     
 }
 
@@ -57,8 +54,9 @@
     
     if (running==NO) {
         running=YES;
-        [resetBtn setEnabled:YES];
+        //[resetBtn setEnabled:YES];
         [startBtn setTitle:@"STOP" forState:UIControlStateNormal];
+        [resetBtn setTitle:@"LAP" forState:UIControlStateNormal];
         
         if (myTimer==nil)
         {        myTimer=[NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
@@ -68,29 +66,28 @@
         running=NO;
         [myTimer invalidate];
         myTimer=nil;
-        
-        
-        
-        [startBtn setTitle:@"START" forState:UIControlStateNormal];
-        
-        // Lap
-        
-        
-//        [mutArrData insertObject:timerLabel.text atIndex:lapIndex];
-//        lapIndex +=1;
-//        
-//        NSLog(@"Mutable Array : %@",mutArrData);
+        [startBtn setTitle:@"STOP" forState:UIControlStateNormal];
+        [resetBtn setTitle:@"Reset" forState:UIControlStateNormal];
         
     }
 }
 - (IBAction)resetBtnPushed:(id)sender {
     NSLog(@"restBtn Tap");
-    running=NO;
-    [myTimer invalidate];
-    myTimer=nil;
-    [startBtn setTitle:@"START" forState:UIControlStateNormal];
-    count=0;
-    timerLabel.text=@"00:00:00";
+       [mutArrData addObject:timerLabel.text];
+    [myTableView reloadData];
+    NSLog(@"Mutable Array : %@",mutArrData);
+            [startBtn setTitle:@"START" forState:UIControlStateNormal];
+
+    if (running==NO) {
+      
+        timerLabel.text=@"00:00:00";
+        [mutArrData removeObjectsInArray:mutArrData];
+        [myTableView reloadData];
+        [resetBtn setTitle:@"LAP" forState:UIControlStateNormal];
+        [startBtn setTitle:@"START" forState:UIControlStateNormal];
+        
+    }
+    
 }
 -(void)updateTimer{
     count++;
@@ -113,21 +110,13 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSLog(@"numberOFRowInSection");
-    return [mutArrData count];
+       return  [mutArrData count];//[mutArrData count];
     
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier=@"Cell";
-    LapListTableViewCell *cell=(LapListTableViewCell *)[myTableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if (cell == nil)
-    {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"LapListTableViewCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
-   NSString *strArr=[mutArrData objectAtIndex:indexPath.row];
-   // [cell.lapLabel setText:strArr];
-    [cell.textLabel setText:strArr];
-   // cell.lapLabel.text=[[mutArrData objectAtIndex:indexPath.row]stringByAppendingString:strArr ];
+    cell=(LapListTableViewCell *)[myTableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    cell.lapLabel.text=[mutArrData objectAtIndex:(mutArrData.count-(indexPath.row+1))];// ];
     NSLog(@"tavleViewcell=%@",cell);
     return cell;
 }
