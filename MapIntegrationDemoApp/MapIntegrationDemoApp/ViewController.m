@@ -155,16 +155,7 @@
 }
 
 
-- (IBAction)btnStandards:(id)sender {
-    
-// [mapView setMapType:MKMapTypeStandard];
-//    [self loadUserLocation];
-//    [mapView setMapType:MKMapTypeSatellite];
-//   [self loadUserLocation];
-    //[mapView setMapType:MKMapTypeHybrid];
-    //[self loadUserLocation];
-    
-}
+
 - (IBAction)segBtnTap:(id)sender {
     if(segControlForColor.selectedSegmentIndex==0){
         //self.mapView.delegate = self;
@@ -180,7 +171,7 @@
 //    }
     else{
        //for Type show HybridView
-    [mapView setMapType:MKMapTypeHybrid];
+    //[mapView setMapType:MKMapTypeSatellite];
         //[self loadUserLocation];
 
     }

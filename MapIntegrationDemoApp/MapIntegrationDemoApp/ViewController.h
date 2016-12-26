@@ -19,6 +19,6 @@
 - (IBAction)segBtnTap:(id)sender;
 @property(nonatomic,strong)NSMutableArray *categoryData;
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
-- (IBAction)btnStandards:(id)sender;
+
 @end
 

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Timer-->
+        <!--Stopwatch-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -154,7 +154,7 @@
                             <constraint firstItem="q4E-NI-beL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nr6-Xp-Zz7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Timer" id="g3x-0e-aic"/>
+                    <navigationItem key="navigationItem" title="Stopwatch" id="g3x-0e-aic"/>
                     <connections>
                         <outlet property="myTableView" destination="lcx-Bh-mMl" id="Ld9-1A-gpZ"/>
                         <outlet property="resetBtn" destination="PwH-Nb-bHm" id="vJo-Pt-9FW"/>
