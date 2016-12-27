@@ -89,6 +89,14 @@ SatelliteView:-
 6:-PdfReaderApp:-
 In this app,I have done read of pdf file for this i have use Github lib VFR.
 
+Ist image:-
+
+![imageedit_71_3433842547](https://cloud.githubusercontent.com/assets/24600522/21490993/56a11952-cc1f-11e6-839a-5c1fb89f08ac.png)
+
+2nd image:-
+
+![imageedit_73_2932344205](https://cloud.githubusercontent.com/assets/24600522/21490968/2b6c3848-cc1f-11e6-9da2-a93cd0be91e8.png)
+
 
 7:-StopwatchApp:-
 In this app,I had done stopwatch with lap feature.
