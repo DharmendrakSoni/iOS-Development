@@ -12,6 +12,7 @@ I've created Demo app on the following below topic in iOS(Objective c):-
 5:-MapIntegrationDemoApp
 6:-PdfReaderApp
 7:-StopwatchApp
+8:-LoaderCustomizationDemoApp
 
 1:CoredataDemoApp:-In this app i have implemented the functionality of  Insert,Update,Delete and Showing the data with the haelp of the coredata.  
   coredata:When we talk about persistent data, people probably think of database. If you are familiar with Oracle or MySQL, you know that relational database stores data in the form of table, row and column, and it usually facilitates access through what-so-called SQL query. However, don’t mix up Core Data with database. Though SQLite database is the default persistent store for Core Data on iPhone, Core Data is not a relational database. It is actually a framework that lets developers store (or retrieve) data in database in an object-oriented way. With Core Data, you can easily map the objects in your apps to the table records in the database without even knowing any SQL.
@@ -109,6 +110,17 @@ Lap Image:-
 
 ![imageedit_52_3030135817](https://cloud.githubusercontent.com/assets/24600522/21482930/81aa0aa2-cba0-11e6-8d0a-077321be74a9.png)
 
+8:-LoaderCustomizationDemoApp:-
+
+In this app I Had done LoaderCustomization.
+
+Ist screenshot:-
+
+![imageedit_74_8061942823](https://cloud.githubusercontent.com/assets/24600522/21544832/8e8d5774-cdf8-11e6-9839-4d63bb4e7d95.png)
+
+IInd screenshot:-
+
+![imageedit_76_4469862058](https://cloud.githubusercontent.com/assets/24600522/21544889/0358e802-cdf9-11e6-84c2-cb33861eb7d4.png)
 
 
 
