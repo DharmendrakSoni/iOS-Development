@@ -56,7 +56,13 @@ In this app i have implemented the functionality of Gesture properties such as(Z
 
 In this app i have show how to open device camera and gallary and on selecting image i have told how to rotate image and set to mirror effect on that image. 
 
-![imageedit_22_5315100245](https://cloud.githubusercontent.com/assets/24600522/21350759/1d60dbb8-c6df-11e6-9c5d-06dba095cacf.png)
+Ist Image:-
+
+![imageedit_15_6878352906](https://cloud.githubusercontent.com/assets/24600522/21566003/8d4e8e1a-cec4-11e6-85a4-a4916cdbafb5.png)
+
+IInd Image:-
+
+![imageedit_18_7470245804](https://cloud.githubusercontent.com/assets/24600522/21566017/bae31544-cec4-11e6-8ac1-557fad4d4667.png)
 
 4:-JsonAndXmlParsingApp:-
 
@@ -64,15 +70,15 @@ In this app i had done Json parsing and Xml parsing with bind the data in tablVi
 
 JSON Raw data:-
 
-![imageedit_65_5601011730](https://cloud.githubusercontent.com/assets/24600522/21482603/732898da-cb9c-11e6-9fab-57a2d95a7b7f.png)
+![imageedit_42_2741988677](https://cloud.githubusercontent.com/assets/24600522/21566172/538f4942-cec6-11e6-98ca-84909493f085.png)
 
 JSON Parse:-
 
-![imageedit_67_3197916667](https://cloud.githubusercontent.com/assets/24600522/21482623/9a8155ac-cb9c-11e6-837b-13e1a38c5671.png)
+![imageedit_39_5066793724](https://cloud.githubusercontent.com/assets/24600522/21566163/3d692ce6-cec6-11e6-96f2-1caa5d028d18.png)
 
 XML Parse:-
 
-![imageedit_63_3407589785](https://cloud.githubusercontent.com/assets/24600522/21482635/c068b7ec-cb9c-11e6-84ec-d5af5895a647.png)
+![imageedit_46_6040840595](https://cloud.githubusercontent.com/assets/24600522/21566179/65a634c4-cec6-11e6-8b31-67df26df0dbb.png)
 
 5:-MapIntegrationDemoApp:-
 
@@ -80,11 +86,11 @@ In this app i have done map integration with user current location through mapki
 
 StandardView:-
 
-![imageedit_59_8332934305](https://cloud.githubusercontent.com/assets/24600522/21482716/bf0b217c-cb9d-11e6-8038-3af6dd2089c0.png)
+![imageedit_30_9709368772](https://cloud.githubusercontent.com/assets/24600522/21565975/343bb82a-cec4-11e6-89ec-0ddedb587296.png)
 
 SatelliteView:-
 
-![imageedit_57_4232019986](https://cloud.githubusercontent.com/assets/24600522/21482741/fc74957a-cb9d-11e6-939e-1bb227a7639b.png)
+![imageedit_27_5778280619](https://cloud.githubusercontent.com/assets/24600522/21565982/4884e568-cec4-11e6-9c88-b0a7bb28b4b8.png)
 
 
 6:-PdfReaderApp:-
@@ -104,11 +110,11 @@ In this app,I had done stopwatch with lap feature.
 
 Ist image:-
 
-![imageedit_48_5721660289](https://cloud.githubusercontent.com/assets/24600522/21482923/61e6813c-cba0-11e6-985a-4cd6214ff5fa.png)
+![imageedit_21_8855438135](https://cloud.githubusercontent.com/assets/24600522/21565988/5eab42ce-cec4-11e6-881d-eaab32fe4760.png)
 
 Lap Image:-
 
-![imageedit_52_3030135817](https://cloud.githubusercontent.com/assets/24600522/21482930/81aa0aa2-cba0-11e6-8d0a-077321be74a9.png)
+![imageedit_24_9743790049](https://cloud.githubusercontent.com/assets/24600522/21565997/76233cf4-cec4-11e6-8d18-e88f0fa60085.png)
 
 8:-LoaderCustomizationDemoApp:-
 
@@ -116,11 +122,11 @@ In this app I Had done LoaderCustomization.
 
 Ist screenshot:-
 
-![imageedit_74_8061942823](https://cloud.githubusercontent.com/assets/24600522/21544832/8e8d5774-cdf8-11e6-9839-4d63bb4e7d95.png)
+![imageedit_33_3073531262](https://cloud.githubusercontent.com/assets/24600522/21566087/89df2996-cec5-11e6-82eb-e6652429ecb9.png)
 
 IInd screenshot:-
 
-![imageedit_76_4469862058](https://cloud.githubusercontent.com/assets/24600522/21544889/0358e802-cdf9-11e6-84c2-cb33861eb7d4.png)
+![imageedit_36_2312549911](https://cloud.githubusercontent.com/assets/24600522/21566104/a0c08d62-cec5-11e6-8cb7-054abcea6631.png)
 
 
 
